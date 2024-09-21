@@ -1,6 +1,6 @@
 <%= simple_form_for article do |f| %>
   <%= f.input :title %>
-  <%= f.input :content %>
+  <%= f.input :content, data: { editor: 'markdown' }, rows: 10  %>
   <%= f.button :submit, class: "btn-primary" %>
 <% end %>
 <%= render "nav_footer" %>
